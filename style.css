@@ -1,0 +1,130 @@
+h1,h2,h3,h4,h5,h6,span,p,a{
+    font-family: 'Roboto', sans-serif;
+}
+.pricing-section{
+    background: #f6f9fc;
+}
+.pricing-content{}
+.pricing-content h6{
+    color: #305fd0;
+}
+.pricing-content h2{
+    font-weight: 400;
+    color: #111;
+}
+.pricing-items{
+    background: #fff;
+    box-shadow: 4px 4px 20px 0 rgba(255,255,255,
+.5);
+padding: 25px 0;
+}
+.pricing-items:hover{
+    background: #305fd0;
+    color: #fff;
+}
+.pricing-items h6{
+    text-align: center;
+    margin-left: 10px;
+}
+.pricing-items h1{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 18px;
+position: relative;
+}
+.pricing-items h1::after{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    width: 130px;
+    height: 1px;
+    background: #7d8081;
+}
+.pricing-items ul{}
+.pricing-items ul li{
+    list-style: none;
+    padding: 5px 0;
+    font-weight: 300;
+}
+.button-btns{
+    position: relative;
+    display: inline-block;
+    
+    background: #305fd0;
+    
+    border-radius: 20px;
+    z-index: 1;
+
+}
+.button-btns::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    visibility: hidden;
+    background: #305fd0;
+color: #fff;
+    opacity: 0;
+    transition: 1s;
+    border-radius: 20px;
+z-index: -1;
+}
+.pricing-items .button-btns:hover{
+    background: #fff;
+
+}
+.button-btns:hover::before{
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+
+}
+/* banner-section*/
+.baneer-section{
+    background: url(./242390991_345959230609266_754034435631067016_n.jpg) no-repeat center center;
+background-size: cover;
+padding: 140px;
+position: relative;
+z-index: 1;
+}
+.baneer-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 100, 213,.6);
+    z-index: -1;
+}
+.banner-content{
+    position: relative;
+    padding-bottom: 30px;
+}
+.banner-content h1::before{
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 210px;
+    width: 60px;
+    height: 1px;
+    background: #f5f7f8;
+}
+
+/* newsletter */
+.news-content{
+    background: #0436ac;
+    padding-left: 20px;
+}
+.primary-color{
+    background: #305fd0;
+    border-radius: 20px;
+}
+.news-items{
+    box-shadow: 4px 4px 20px 0 rgba(0,0,0.5);
+    width: 70%;
+    padding: 20px 30px;
+}
